@@ -1,0 +1,11 @@
+package exemploHeranca;
+
+public class Animal {
+	
+	public String nome;
+	public String tipo;
+	public String corDoPelo;
+	int idade;
+	
+	
+}

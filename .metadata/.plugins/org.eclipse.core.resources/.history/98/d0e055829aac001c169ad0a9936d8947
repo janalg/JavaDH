@@ -1,0 +1,14 @@
+package bancario;
+
+import java.sql.Date;
+
+public class Pessoa {
+	String nome;
+	String cpf;
+	String rg;
+	String profissao;
+	String email;
+	String telefone;
+	
+	
+}

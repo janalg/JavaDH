@@ -1,0 +1,15 @@
+package jogoPOO;
+
+public class Arma2 implements Armas {
+	public static final int qtdMunicao = 25;
+	public static final float tempoRecarregar = 5.7f;
+	@Override
+	public void atirar() {
+		System.out.println("Quantidade de munição Arma02: " + qtdMunicao);
+	}
+
+	@Override
+	public void recarregar() {
+		System.out.println("Tempo para recarregar Arma02: " + tempoRecarregar + "s");
+	}
+}

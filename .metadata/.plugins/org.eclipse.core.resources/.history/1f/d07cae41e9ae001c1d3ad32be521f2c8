@@ -1,0 +1,68 @@
+package bancario;
+
+public class Conta {
+	//atributos
+	private int agencia;
+	private int conta;
+	private double saldo;
+	String tipoConta;
+	
+	
+	//construtores
+	public Conta() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	public Conta(int agencia, int conta, String tipoConta) {
+		super();
+		this.agencia = agencia;
+		this.conta = conta;
+		this.tipoConta = tipoConta;
+	}
+	// encapsulamentos
+
+
+	public int getAgencia() {
+		return agencia;
+	}
+
+
+	public void setAgencia(int agencia) {
+		this.agencia = agencia;
+	}
+
+
+	public int getConta() {
+		return conta;
+	}
+
+
+	public void setConta(int conta) {
+		this.conta = conta;
+	}
+
+
+	public double getSaldo() {
+		return saldo;
+	}
+
+
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
+
+	public String getTipoConta() {
+		return tipoConta;
+	}
+
+
+	public void setTipoConta(String tipoConta) {
+		this.tipoConta = tipoConta;
+	}
+	
+	
+	
+}

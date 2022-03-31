@@ -1,0 +1,15 @@
+package jogoPOO;
+
+public class ArmaUm implements Armas{
+
+	@Override
+	public void atirar() {
+		
+	}
+
+	@Override
+	public void recarregar() {
+		
+	}
+	
+}

@@ -1,0 +1,23 @@
+package jogoPOO;
+
+public abstract class Armas {
+	private int qtdMunicao;
+	private float tempoRecarregar;
+	
+	public abstract void atirar();
+	public abstract void recarregar();
+	public int getQtdMunicao() {
+		return qtdMunicao;
+	}
+	public void setQtdMunicao(int qtdMunicao) {
+		this.qtdMunicao = qtdMunicao;
+	}
+	public float getTempoRecarregar() {
+		return tempoRecarregar;
+	}
+	public void setTempoRecarregar(float tempoRecarregar) {
+		this.tempoRecarregar = tempoRecarregar;
+	}
+	
+	
+}

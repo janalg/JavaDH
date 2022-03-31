@@ -1,0 +1,9 @@
+package bancario;
+
+public class ContaCorrente extends Conta{
+	private double limite;
+	
+	public ContaCorrente() {
+		this.limite = 500.0;
+	}
+}

@@ -1,0 +1,10 @@
+1648405059843	Delete element
+1648409137331	Rename type 'Arma2'
+1648414634739	Inline local variable 'escolherArma'
+1648483824913	Encapsulate field 'atirarr'
+1648483840017	Encapsulate field 'recarregarr'
+1648483857208	Convert local variable 'scanear' to field
+1648484774544	Encapsulate field 'atirarr'
+1648484780906	Encapsulate field 'recarregarr'
+1648485486817	Encapsulate field 'atirarr'
+1648485492583	Encapsulate field 'recarregarr'

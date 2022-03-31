@@ -1,0 +1,40 @@
+package bancario;
+
+public class TestaBanco {
+	public static void main(String[] args) {
+//		Pessoa pessoaNumero1 = new Pessoa();//criar uma instancia = cópia
+//		pessoaNumero1.nome = "José das couves";
+//		pessoaNumero1.profissao = "Agricultor";
+//		pessoaNumero1.cpf = "112.146.900-09";
+//		
+//		System.out.println("Nome: " +pessoaNumero1.nome);
+//		System.out.println("Profissão: "+pessoaNumero1.profissao);
+//		System.out.println("CPF: "+ pessoaNumero1.cpf);
+		
+//		Pessoa pessoaNumero2= new Pessoa();
+//		pessoaNumero2.setNome("José Josefino");
+//		System.out.println("Nome: "+pessoaNumero2.getNome());
+		
+		Conta conta1 = new Conta();
+		conta1.setAgencia(1234);
+		conta1.setNumeroConta(7898);
+		//conta1.setSaldo(10000); não se deve alterar diretamente essa informação, apenas exibi-la
+		conta1.setTitular("Janaina");
+		conta1.depositar(100);
+		conta1.transferir(40, conta1)
+		
+		
+		System.out.println("Agência: " +  conta1.getAgencia());
+		System.out.println("Conta: " +  conta1.getNumeroConta());
+		System.out.println("Titular: " +  conta1.getTitular());
+		System.out.printf("Saldo atual: R$  %.2f",conta1.getSaldo());
+		System.out.println("\n");
+		
+		if(conta1.sacar(10)) {
+			System.out.println("Saque efetuado com sucesso!");
+		}else {
+			System.out.println("Verifique o valor do saque!");
+		}
+		System.out.printf("Saldo atual: R$  %.2f",conta1.getSaldo());
+	}
+}
