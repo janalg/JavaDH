@@ -1,5 +1,0 @@
-package exemploPolimorfismo;
-
-public class Reptil extends Animal {
-	
-}

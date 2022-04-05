@@ -1,17 +1,27 @@
 package bancario;
 
-import java.sql.Date;
-
 public class PessoaHerança {
+	
 	private String nome;
 	private String email;
 	private String telefone;
 	
+	public PessoaHerança() {
+		//metodo construtor default = preenchimento dos atributos é opcional
+	}
 	
-	public String getNome() {
+			
+	public PessoaHerança(String nome,  String email, String telefone) {
+		super();
+		this.nome = nome;
+		this.email = email;
+		this.telefone = telefone;
+	}
+
+	public String getNome() { //exibe os objetos
 		return nome;
 	}
-	public void setNome(String nome) {
+	public void setNome(String nome) { //grava os objetos nos atributos
 		this.nome = nome;
 	}
 	
@@ -27,15 +37,10 @@ public class PessoaHerança {
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
-	public PessoaHerança(String nome, String email, String telefone) {
-		super();
-		this.nome = nome;
-		this.email = email;
-		this.telefone = telefone;
-	}
-	public PessoaHerança() {
-		// TODO Auto-generated constructor stub
-	}
+	
+	
+
+	
 	
 	
 	

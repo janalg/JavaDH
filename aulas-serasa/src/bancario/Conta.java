@@ -7,39 +7,39 @@ public class Conta {
 	protected double saldo;
 	private PessoaHerança titular;
 
-	
+
 	//construtores
-	public Conta() {
-		
-	}
+	public Conta() { //padrao
 	
-	public Conta(int agencia, int numeroConta, PessoaHerança titular) {
+	}
+
+	public Conta(int agencia, int numeroConta, PessoaFisica titular) { //sobrecarregado
 		super();
 		this.agencia = agencia;
 		this.numeroConta = numeroConta;
-		this.titular = titular;
 		this.saldo = 0;
 	}
-	//Métodos
+	
+	//metodos
 	
 	public void depositar(double valor) {
-		
-		if(valor>0) {
-			saldo += valor;//saldo = saldo + valor
+		if (valor > 0) {
+			saldo +=valor; // saldo = saldo + valor;
 		}
+			
 	}
 	
 	public boolean sacar(double valor) {
-		if (valor > 0 && saldo >= valor) {
-			saldo -= valor;
-			return true;
-		}
+			if(valor > 0 && saldo >= valor) {
+				saldo -= valor;
+				return true;
+			}
+			
 		return false;
-		
 	}
 	
 	public boolean transferir(double valor, Conta destinatario) {
-		if (valor > 0 && saldo >= valor) {
+		if(valor > 0 && saldo >=valor) {
 			saldo -= valor;
 			destinatario.depositar(valor);
 			return true;
@@ -47,10 +47,10 @@ public class Conta {
 		
 		return false;
 	}
+	
+	
 
-	
-	
-	// encapsulamentos
+	//encapsulamentos
 	public int getAgencia() {
 		return agencia;
 	}
@@ -71,10 +71,6 @@ public class Conta {
 		return saldo;
 	}
 
-	public void setSaldo(double saldo) {
-		this.saldo = saldo;
-	}
-
 	public PessoaHerança getTitular() {
 		return titular;
 	}
@@ -82,9 +78,5 @@ public class Conta {
 	public void setTitular(PessoaHerança titular) {
 		this.titular = titular;
 	}
-	
-	
-	
 
-	
 }

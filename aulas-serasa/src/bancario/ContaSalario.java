@@ -1,5 +1,7 @@
 package bancario;
 
-public class ContaSalario extends Conta{
+public class ContaSalario extends Conta {
+
+	
 	private double tarifa;
 }

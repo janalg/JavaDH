@@ -1,8 +1,0 @@
-package jogoPOO;
-
-public abstract class Armas {
-	public abstract void atirar();
-	public abstract void recarregar();
-	
-	
-}

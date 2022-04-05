@@ -1,20 +1,38 @@
 package bancario;
 
-import java.sql.Date;
-
 public class Pessoa {
+	
 	private String nome;
 	private String cpf;
+	private String profissao;	
 	private String rg;
-	private String profissao;
 	private String email;
 	private String telefone;
 	
+	public Pessoa() {
+		//metodo construtor default = preenchimento dos atributos é opcional
+	}
 	
-	public String getNome() {
+	public Pessoa(String nome,String cpf, String rg) {
+		this.nome = nome;
+		this.cpf = cpf;
+		this.rg = rg;
+	}
+			
+	public Pessoa(String nome, String cpf, String profissao, String rg, String email, String telefone) {
+		super();
+		this.nome = nome;
+		this.cpf = cpf;
+		this.profissao = profissao;
+		this.rg = rg;
+		this.email = email;
+		this.telefone = telefone;
+	}
+
+	public String getNome() { //exibe os objetos
 		return nome;
 	}
-	public void setNome(String nome) {
+	public void setNome(String nome) { //grava os objetos nos atributos
 		this.nome = nome;
 	}
 	public String getCpf() {
@@ -23,17 +41,17 @@ public class Pessoa {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-	public String getRg() {
-		return rg;
-	}
-	public void setRg(String rg) {
-		this.rg = rg;
-	}
 	public String getProfissao() {
 		return profissao;
 	}
 	public void setProfissao(String profissao) {
 		this.profissao = profissao;
+	}
+	public String getRg() {
+		return rg;
+	}
+	public void setRg(String rg) {
+		this.rg = rg;
 	}
 	public String getEmail() {
 		return email;
@@ -47,18 +65,10 @@ public class Pessoa {
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
-	public Pessoa(String nome, String cpf, String rg, String profissao, String email, String telefone) {
-		super();
-		this.nome = nome;
-		this.cpf = cpf;
-		this.rg = rg;
-		this.profissao = profissao;
-		this.email = email;
-		this.telefone = telefone;
-	}
-	public Pessoa() {
-		// TODO Auto-generated constructor stub
-	}
+	
+	
+
+	
 	
 	
 	
