@@ -22,7 +22,8 @@
     <fullyQualifiedTypeName name="java.lang.EnumConstantNotPresentException"/>
     <fullyQualifiedTypeName name="bancario.Conta"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="bancario.PessoaHerança"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.lang.Double"/>
+    <fullyQualifiedTypeName name="bancario.PessoaHerança"/>
+    <fullyQualifiedTypeName name="debugs.Calculadora"/>
 </qualifiedTypeNameHistroy>
